@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dashboard</class>
+ <widget class="QWidget" name="Dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dashboard</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="frameModules">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutModules">
+      <item>
+       <widget class="QPushButton" name="buttonEmployee">
+        <property name="text">
+         <string>Employee Module</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonClient">
+        <property name="text">
+         <string>Client Module</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonMeetings">
+        <property name="text">
+         <string>Meetings</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonEquipment">
+        <property name="text">
+         <string>Equipment</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonProjects">
+        <property name="text">
+         <string>Projects</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonSponsors">
+        <property name="text">
+         <string>Sponsors</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidgetModules">
+     <widget class="QWidget" name="widgetEmployee">
+      <layout class="QVBoxLayout" name="verticalLayoutEmployee">
+       <item>
+        <widget class="QLabel" name="labelEmployee">
+         <property name="text">
+          <string>Employee Module Content</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableViewEmployees"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widgetClient">
+      <layout class="QVBoxLayout" name="verticalLayoutClient">
+       <item>
+        <widget class="QLabel" name="labelClient">
+         <property name="text">
+          <string>Client Module Content</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widgetMeetings">
+      <layout class="QVBoxLayout" name="verticalLayoutMeetings">
+       <item>
+        <widget class="QLabel" name="labelMeetings">
+         <property name="text">
+          <string>Meetings Module Content</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widgetEquipment">
+      <layout class="QVBoxLayout" name="verticalLayoutEquipment">
+       <item>
+        <widget class="QLabel" name="labelEquipment">
+         <property name="text">
+          <string>Equipment Module Content</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widgetProjects">
+      <layout class="QVBoxLayout" name="verticalLayoutProjects">
+       <item>
+        <widget class="QLabel" name="labelProjects">
+         <property name="text">
+          <string>Projects Module Content</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widgetSponsors">
+      <layout class="QVBoxLayout" name="verticalLayoutSponsors">
+       <item>
+        <widget class="QLabel" name="labelSponsors">
+         <property name="text">
+          <string>Sponsors Module Content</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
