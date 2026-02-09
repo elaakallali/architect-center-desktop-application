@@ -64,6 +64,6 @@ Framework: Qt
 
 Database: Oracle DB
 
-Hardware: Arduino + Fingerprint Sensor
+Hardware: Arduino + Card Sensor
 
 Other: SQL, SMTP Email Integration
