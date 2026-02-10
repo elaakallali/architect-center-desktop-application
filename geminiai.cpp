@@ -17,7 +17,7 @@ GeminiHandler::GeminiHandler(QObject *parent,QTextEdit *responseTextEdit)
 
 void GeminiHandler::sendMessageToGemini(const QString &userMessage)
 {
-    QString apiKey = "AIzaSyDTNvfA13LENK9C6p60KBYDWh8I9nHa5bM"; // Replace this with your actual API key
+    QString apiKey = "Replace this with your actual API key"; 
 
     QUrl url(QString("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=%1").arg(apiKey));
     QNetworkRequest request(url);
@@ -120,3 +120,4 @@ void GeminiHandler::sendMessage(const QString &message)
     // Emit the responseReceived signal with the response
     emit responseReceived(response);
 }
+
